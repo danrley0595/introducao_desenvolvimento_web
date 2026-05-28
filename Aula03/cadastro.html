@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav strong {
+            color: white;
+            font-size: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: cyan;
+        }
+
+        .conteiner {
+            width: 400px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: cyan;
+        }
+
+        .checkbox input,
+        .radio input {
+            width: auto;
+        }
+
+        .radio,
+        .checkbox {
+            margin-top: 15px;
+        }
+
+        .radio label,
+        .checkbox label {
+            display: block;
+            margin-top: 8px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;;
+        }
+
+        input[type="file"] {
+            border: none;
+            padding: 0;
+        }
+        .upload-label{
+            display: block;
+            margin-top: 10px;
+            padding: 12px;
+            background-color: #222;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0,3s;
+        }
+        .upload-label:hover{
+            background-color: #444;
+        }
+
+        #btn-cadastrar {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            background-color: #222;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0,3s;
+        }
+
+        #btn-cadastrar:hover {
+            background-color: #444;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <strong>Aprendendo HTML</strong>
+        </div>
+
+        <ul>
+            <li><a href="atividade.html">Início</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteiner">
+
+        <h1>Cadastro de Usuários</h1>
+
+        <section>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" maxlength="30" minlength="2" placeholder="Informe seu nome..." required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Informe seu E-mail..." required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" maxlength="13" minlength="8" placeholder="Informe seu telefone..."
+                    required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" minlength="6" placeholder="Informe sua senha..." required>
+
+                <div class="radio">
+
+                    <p><strong>Gênero:</strong></p>
+
+                    <label>
+                        <input type="radio" name="sexo" value="masculino">
+                        Masculino
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sexo" value="feminino">
+                        Feminino
+                    </label>
+
+                </div>
+
+                <br>
+                <label>Enviar Arquivo</label>
+                <label for="arquivo" class="upload-label">Escolher arquivo</label>
+                <input type="file" id="arquivo" hidden>
+
+                <div class="checkbox">
+
+                    <label>
+                        <input type="checkbox">
+                        Aceito os termos
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Quero receber novidades
+                    </label>
+
+                </div>
+
+                <button type="submit" id="btn-cadastrar">
+                    Cadastrar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

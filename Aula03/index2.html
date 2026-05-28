@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /*Aplicando estilo no h1*/
+        header h1{
+            margin-bottom: 10px;
+
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center
+
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover{
+            color: yellow;
+        }
+        main{
+            padding: 40px;
+        }
+        section{
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        button:hover{
+            background-color: #555;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>Titulo</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <!--Seção de Conteudo-->
+    <main>
+        <!--DIV -> Blobo generico para organizar conteudo em seções-->
+        <section>
+            <h2>Bem-Vindo</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo odit itaque praesentium modi hic
+                at. Similique vero dolorum consequuntur voluptas, placeat assumenda sed, iure aut nulla possimus
+                veritatis ullam.</p>
+            <button>Saiba Mais</button>
+        </section>
+
+    </main>
+    <hr>
+    <!--Rodapé-->
+    <footer>
+        <p>Desenvolvido para aprender HTML</p>
+    </footer>
+</body>
+
+</html>
