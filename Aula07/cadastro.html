@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>TechFlow</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TechFlow Soluções</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="usuario.html">Usuários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="cadastro.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="datanascimento">Data de Nascimento:</label>
+            <input type="date" id="datanascimento" name="datanascimento" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required minlength="5"><br><br>
+
+            <select id="cargo" name="cargo" required>
+                <option value="">Selecione o plano</option>
+                <option value="basico">Básico</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+            <button type="submit">Cadastrar</button>
+
+
+
+    </main>
+    <footer class="footer center">
+        <p>&copy; 2026 TechFlow Soluções. Todos os direitos reservados.</p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </footer>
+</body>
+
+</html>
