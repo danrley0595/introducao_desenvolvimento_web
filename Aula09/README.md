@@ -1,19 +1,17 @@
 # TechFlow Soluções
 
-Projeto de um site simples para apresentar os serviços da empresa fictícia TechFlow Soluções.
-
-O objetivo do projeto é praticar HTML, CSS e JavaScript básico, criando páginas ligadas por menu, formulário, tabela de usuários e um carrossel de serviços.
+Projeto que desenvolvemos em sala de aulça com o professor André, um site simples para apresentar os serviços da empresa fictícia TechFlow Soluções.
 
 ## Funcionalidades
 
 - Página inicial com apresentação da empresa.
-- Carrossel com 4 serviços.
+- Carrossel com os serviços oferecidos.
 - Botões para avançar e voltar no carrossel.
 - Troca automática dos slides a cada 3 segundos.
 - Página de cadastro.
 - Página de lista de usuários.
 - Página de contato.
-- Layout adaptado para celular.
+- Layout respansivo
 - Rodapé no final da página.
 
 ## Tecnologias utilizadas
@@ -37,7 +35,7 @@ techflow/
 
 ## Como executar
 
-1. Baixe ou extraia os arquivos do projeto.
+1. Baixe os arquivos do projeto.
 2. Abra a pasta no Visual Studio Code.
 3. Abra o arquivo index.html no navegador.
 
