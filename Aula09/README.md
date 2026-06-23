@@ -24,13 +24,13 @@ Projeto que desenvolvemos em sala de aulça com o professor André, um site simp
 
 
 techflow/
-│
-├── index.html
-├── cadastro.html
-├── usuario.html
-├── contato.html
-├── estilo.css
-└── estilo_carrosel.css
+
+- index.html
+- cadastro.html
+- usuario.html
+- contato.html
+- estilo.css
+- estilo_carrosel.css
 
 
 ## Como executar
