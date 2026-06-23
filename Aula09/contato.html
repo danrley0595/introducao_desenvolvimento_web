@@ -5,46 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>TechFlow</title>
+    <title>Contato - TechFlow Soluções</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>TechFlow Soluções</h1>
-        </div>
+        <h1>TechFlow Soluções</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="usuario.html">Usuários</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="contato">
+
+    <main class="pagina-interna">
+        <section class="conteudo-pagina">
             <h2>Contato</h2>
-            <p>Se você tiver alguma dúvida, sugestão ou precisar de suporte, não hesite em entrar em contato conosco.
-                Estamos aqui para ajudar!</p>
+            <p>
+                Envie uma dúvida, sugestão ou pedido de suporte. Escreva um pouco sobre a sua necessidade para que a
+                nossa equipe consiga entender melhor a situação e ajudar da forma correta.
+            </p>
+
             <form action="contato.html" method="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+                <input type="text" id="nome" name="nome" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
                 <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required><br><br>
+                <input type="text" id="assunto" name="assunto" required>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="6" maxlength="100"
-                    placeholder="Digite sua mensagem"></textarea><br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem" required></textarea>
 
                 <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
-    <footer class="footer center">
+
+    <footer class="footer">
         <p>&copy; 2026 TechFlow Soluções. Todos os direitos reservados.</p>
     </footer>
 </body>

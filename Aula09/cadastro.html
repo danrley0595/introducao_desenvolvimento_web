@@ -5,50 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>TechFlow</title>
+    <title>Cadastro - TechFlow Soluções</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>TechFlow Soluções</h1>
-        </div>
+        <h1>TechFlow Soluções</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="usuario.html">Usuários</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <form action="cadastro.html" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
 
-            <label for="datanascimento">Data de Nascimento:</label>
-            <input type="date" id="datanascimento" name="datanascimento" required><br><br>
+    <main class="pagina-interna">
+        <section class="conteudo-pagina">
+            <h2>Cadastro</h2>
+            <p>
+                Preencha os seus dados para conhecer melhor os planos e serviços da TechFlow. Depois do cadastro,
+                nossa equipe poderá entrar em contato para apresentar uma solução adequada para a sua empresa.
+            </p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <form action="cadastro.html" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required minlength="5"><br><br>
+                <label for="datanascimento">Data de nascimento:</label>
+                <input type="date" id="datanascimento" name="datanascimento" required>
 
-            <select id="cargo" name="cargo" required>
-                <option value="">Selecione o plano</option>
-                <option value="basico">Básico</option>
-                <option value="premium">Premium</option>
-            </select><br><br>
-            <button type="submit">Cadastrar</button>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="5" required>
 
+                <label for="plano">Plano:</label>
+                <select id="plano" name="plano" required>
+                    <option value="">Selecione o plano</option>
+                    <option value="basico">Básico</option>
+                    <option value="premium">Premium</option>
+                </select>
 
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
     </main>
-    <footer class="footer center">
+
+    <footer class="footer">
         <p>&copy; 2026 TechFlow Soluções. Todos os direitos reservados.</p>
-        <a href="index.html">Voltar para a página inicial</a>
+        <a href="index.html">Voltar para o início</a>
     </footer>
 </body>
 

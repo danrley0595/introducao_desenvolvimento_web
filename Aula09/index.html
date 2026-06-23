@@ -6,135 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="estilo_carrosel.css">
-    <title>TechFlow</title>
+    <title>TechFlow Soluções</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>TechFlow Soluções</h1>
-        </div>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">X</label>
+        <h1>TechFlow Soluções</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="usuario.html">Usuários</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="apresentacao">
-            <h2> Bem-vindo à TechFlow!</h2>
-            <p>Na TechFlow, estamos comprometidos em fornecer soluções tecnológicas inovadoras para impulsionar o
-                sucesso dos nossos clientes. Nossa equipe de especialistas trabalha incansavelmente para desenvolver
-                produtos e serviços que atendam às necessidades do mercado e superem as expectativas.</p>
-            <p>Seja você um cliente em busca de soluções personalizadas, um parceiro interessado</p>
+            <h2>Bem-vindo à TechFlow!</h2>
+            <p>
+                A TechFlow é uma empresa que oferece soluções tecnológicas para ajudar outras empresas a melhorar os
+                seus processos e atender melhor os seus clientes.
+            </p>
+            <p>
+                Trabalhamos com desenvolvimento de sistemas, aplicativos, lojas virtuais, serviços em nuvem e
+                automação de tarefas. Cada solução pode ser adaptada de acordo com a necessidade do cliente.
+            </p>
+            <p>Veja abaixo alguns exemplos dos serviços que oferecemos.</p>
+
             <section class="secao-carousel">
-                <div class="carousel-container">
-                    <input type="radio" name="slide" id="s1" checked>
-                    <input type="radio" name="slide" id="s2">
-                    <input type="radio" name="slide" id="s3">
-                    <input type="radio" name="slide" id="s4">
-                    <div class="carousel">
-                        <div class="faixa">
-                            <!--Slide 1-->
-                            <div class="slide">
-                                <div class="slide-imagem">
-                                    <img width="150"
-                                        src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg">
+                <div class="carousel-linha">
+                    <button class="seta" onclick="voltarSlide()">&#10094;</button>
 
-                                </div>
-                                <div class="slide-conteudo">
-                                    <span class="slide-tag">Web</span>
-                                    <h3 class="slide-titulo">Plataforma de e-commerce</h3>
-                                    <p>Loja Virtual completa</p>
-                                </div>
+                    <div class="carousel-container">
+                        <div class="slide ativo">
+                            <div class="slide-imagem">
+                                <img src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
+                                    alt="Loja virtual">
                             </div>
-                            <!--Slide 2-->
-                            <div class="slide">
-                                <div class="slide-imagem">
-                                    <img width="150"
-                                        src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
-                                        alt="Aplicativo Mobile">
-                                </div>
-
-                                <div class="slide-conteudo">
-                                    <span class="slide-tag">Mobile</span>
-                                    <h3 class="slide-titulo">Aplicativos Mobile</h3>
-                                    <p>Aplicativos modernos para Android e iOS com alta performance.</p>
-                                </div>
+                            <div class="slide-conteudo">
+                                <span class="slide-tag">Web</span>
+                                <h3>Plataforma de e-commerce</h3>
+                                <p>
+                                    Criamos lojas virtuais para divulgar produtos e facilitar as vendas pela internet.
+                                    A loja pode ter catálogo, pedidos e informações organizadas para os clientes.
+                                </p>
                             </div>
-                            <!--Slide 3-->
-                            <div class="slide">
-                                <div class="slide-imagem">
-                                    <img width="150"
-                                        src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
-                                        alt="Computação em Nuvem">
-                                </div>
-
-                                <div class="slide-conteudo">
-                                    <span class="slide-tag">Cloud</span>
-                                    <h3 class="slide-titulo">Soluções em Nuvem</h3>
-                                    <p>Infraestrutura segura e escalável para empresas de todos os portes.</p>
-                                </div>
-                            </div>
-                            <!--Slide 4-->
-                            <div class="slide">
-                                <div class="slide-imagem">
-                                    <img width="150"
-                                        src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
-                                        alt="Inteligência Artificial">
-                                </div>
-
-                                <div class="slide-conteudo">
-                                    <span class="slide-tag">IA</span>
-                                    <h3 class="slide-titulo">Automação Inteligente</h3>
-                                    <p>Automatize processos e aumente a produtividade com IA.</p>
-                                </div>
-                            </div>
-
                         </div>
 
-                    </div>
-                    <div class="pontos">
-                        <label for="s1"></label>
-                        <label for="s2"></label>
-                        <label for="s3"></label>
-                        <label for="s4"></label>
+                        <div class="slide">
+                            <div class="slide-imagem">
+                                <img src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
+                                    alt="Aplicativo mobile">
+                            </div>
+                            <div class="slide-conteudo">
+                                <span class="slide-tag">Mobile</span>
+                                <h3>Aplicativos Mobile</h3>
+                                <p>
+                                    Desenvolvemos aplicativos para celulares Android e iOS. Dessa forma, os clientes
+                                    conseguem acessar serviços e informações de qualquer lugar.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-imagem">
+                                <img src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
+                                    alt="Serviços em nuvem">
+                            </div>
+                            <div class="slide-conteudo">
+                                <span class="slide-tag">Cloud</span>
+                                <h3>Soluções em Nuvem</h3>
+                                <p>
+                                    Organizamos sistemas e arquivos na nuvem para que a empresa possa acessar dados
+                                    importantes com mais praticidade e segurança.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="slide">
+                            <div class="slide-imagem">
+                                <img src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
+                                    alt="Automação inteligente">
+                            </div>
+                            <div class="slide-conteudo">
+                                <span class="slide-tag">IA</span>
+                                <h3>Automação Inteligente</h3>
+                                <p>
+                                    Automatizamos tarefas que são repetidas no dia a dia. Assim, a equipe economiza
+                                    tempo e pode se concentrar em atividades mais importantes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
+                    <button class="seta" onclick="proximoSlide()">&#10095;</button>
                 </div>
-
             </section>
         </section>
+
         <section class="servicos">
+            <h2>Nossos principais serviços</h2>
+            <p class="descricao-secao">
+                A TechFlow oferece serviços para empresas que desejam usar a tecnologia de forma mais simples,
+                organizada e útil no dia a dia.
+            </p>
+
             <div class="cards">
-                <article class="card">
+                <div class="card">
                     <h3>Desenvolvimento de Software</h3>
-                    <p>Oferecemos serviços de desenvolvimento de software sob medida para atender às necessidades
-                        específicas do seu negócio. Nossa equipe de desenvolvedores altamente qualificados utiliza as
-                        mais recentes tecnologias para criar soluções eficientes e escaláveis.</p>
-                </article>
-                <article class="card">
+                    <p>
+                        Criamos sistemas, páginas e painéis de acordo com a necessidade de cada negócio. O objetivo é
+                        organizar informações e melhorar a rotina de trabalho.
+                    </p>
+                </div>
+
+                <div class="card">
                     <h3>Consultoria em TI</h3>
-                    <p>Nossa consultoria em TI ajuda as empresas a otimizar seus processos, melhorar a segurança e
-                        implementar estratégias de tecnologia eficazes. Trabalhamos em estreita colaboração com nossos
-                        clientes para entender suas necessidades e fornecer soluções personalizadas.</p>
-                </article>
-                <article class="card">
+                    <p>
+                        Ajudamos a empresa a entender quais tecnologias podem melhorar seus processos. Depois disso,
+                        indicamos opções que sejam simples e eficientes.
+                    </p>
+                </div>
+
+                <div class="card">
                     <h3>Suporte Técnico</h3>
-                    <p>Oferecemos suporte técnico 24/7 para garantir que seus sistemas estejam sempre funcionando
-                        perfeitamente. Nossa equipe de suporte está pronta para resolver quaisquer problemas técnicos
-                        que possam surgir, minimizando o tempo de inatividade e maximizando a produtividade.</p>
-                </article>
+                    <p>
+                        Oferecemos suporte para tirar dúvidas e ajudar a resolver problemas. Nossa equipe acompanha os
+                        sistemas para que eles continuem funcionando corretamente.
+                    </p>
+                </div>
             </div>
+
+            <div class="texto-final">
+                <h2>Uma parceria para a sua empresa</h2>
+                <p>
+                    Nosso objetivo é usar a tecnologia para facilitar o trabalho das pessoas. Buscamos entender cada
+                    cliente e criar soluções que realmente sejam úteis para o crescimento da empresa.
+                </p>
+            </div>
+        </section>
     </main>
-    <footer class="footer center">
+
+    <footer class="footer">
         <p>&copy; 2026 TechFlow Soluções. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        let slides = document.querySelectorAll(".slide");
+        let slideAtual = 0;
+
+        function mostrarSlide() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("ativo");
+            }
+
+            slides[slideAtual].classList.add("ativo");
+        }
+
+        function proximoSlide() {
+            slideAtual = slideAtual + 1;
+
+            if (slideAtual == slides.length) {
+                slideAtual = 0;
+            }
+
+            mostrarSlide();
+        }
+
+        function voltarSlide() {
+            slideAtual = slideAtual - 1;
+
+            if (slideAtual < 0) {
+                slideAtual = slides.length - 1;
+            }
+
+            mostrarSlide();
+        }
+
+        setInterval(proximoSlide, 3000);
+    </script>
 </body>
 
 </html>

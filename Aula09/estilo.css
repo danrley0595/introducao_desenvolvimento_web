@@ -1,3 +1,7 @@
+/*Comentarios para facilitar o meu entendimento da separação dos estilos por página */
+
+/*Estilo geral */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,193 +11,261 @@
 
 body {
     min-height: 100vh;
-    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f8ff;
+    color: #333333;
 }
 
-/*Estilo para o cabeçalho*/
+
+/* Cabeçalho */
 
 header {
-    background-color: #1f2937;
+    background-color: #0d6efd;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 30px;
 }
 
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    list-style: none;
-    margin-top: 10px;
+    gap: 25px;
+    margin-top: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    transition: 0.9s;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: #d3d2d2;
+}
+
+
+main {
+    flex: 1;
 }
 
 
 
-/*Estilizando o main*/
-.apresentacao,
-.contato {
-    padding: 40px;
+/* Página inicial */
+
+.apresentacao {
+    background-color: #eaf3ff;
     text-align: center;
+    padding: 50px 20px;
+}
+
+.apresentacao h2,
+.servicos h2,
+.conteudo-pagina h2 {
+    color: #0b4fa8;
+    margin-bottom: 20px;
+}
+
+.apresentacao p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    line-height: 1.7;
+}
+
+.servicos {
     background-color: white;
+    text-align: center;
+    padding: 55px 20px;
 }
 
-.apresentacao p,
-.contato p {
-    margin-top: 20px;
-    color: #555;
+.descricao-secao {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
 }
 
-/*Estilo dos cards*/
 .cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin-top: 35px;
 }
 
 .card {
-    background-color: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+    width: 300px;
+    min-height: 240px;
+    background-color: #f8fbff;
+    border: 1px solid #b6d4fe;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: left;
 }
 
-.card:hover {
-    transform: translateY(10px);
+.card h3 {
+    color: #0d6efd;
+    margin-bottom: 15px;
 }
 
-/*Estilo para o rodapé*/
-.footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #1f2937;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+.card p {
+    line-height: 1.6;
 }
 
-.footer.center {
-    justify-content: center;
+.texto-final {
+    max-width: 850px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background-color: #eaf3ff;
+    border-radius: 8px;
 }
 
-footer a {
-    background-color: #3b82f6;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+.texto-final p {
+    line-height: 1.7;
 }
 
-footer a:hover {
-    background-color: #2563eb;
-    transform: scale(1.05);
+
+
+/* Página de cadastro */
+
+.pagina-interna {
+    padding: 55px 20px;
+    text-align: center;
 }
 
-/* Estilo do formulario*/
+.conteudo-pagina {
+    max-width: 900px;
+    margin: auto;
+}
+
+.conteudo-pagina>p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+
+
+/* Formulário */
 
 form {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    padding: 25px;
+    background-color: #eaf3ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 30px auto;
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    text-align: left;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #0b4fa8;
 }
 
 input,
 select,
-button,
-textarea {
+textarea,
+button {
     padding: 10px;
+    margin-top: 7px;
     border-radius: 5px;
-    border: 1pxs;
-    margin-top: 10px;
+    border: 1px solid #8bbcff;
+    font-size: 16px;
 }
 
-form label {
-    margin-top: 5px;
-    text-align: left;
-    font-weight: bold;
-
+textarea {
+    resize: vertical;
 }
 
 button {
-    background-color: #1f2937;
+    background-color: #0d6efd;
     color: white;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 22px;
 }
 
-/* Estilo Tabela*/
-table {
-    width: 80%;
-    margin: 30px auto;
-    border-collapse: collapse;
+button:hover {
+    background-color: #0b5ed7;
+}
 
+
+/*Apresentar usuarios */
+
+.tabela-usuarios {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
 }
 
 th,
 td {
-    padding: 10px;
-    border-bottom: 1px solid #d3d2d2;
+    padding: 14px;
+    border: 1px solid #b6d4fe;
     text-align: left;
 }
 
 thead {
-    background-color: #1f2937;
+    background-color: #0d6efd;
     color: white;
 }
 
 tfoot {
-    background-color: #e5e7eb;
+    background-color: #eaf3ff;
     font-weight: bold;
 }
 
-@media(max-width:768px) {
-    .menu-icon {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        margin-top: 10px;
-    }
+.footer {
+    margin-top: auto;
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    nav {
-        display: none;
-        width: 100%;
-    }
+.footer a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 9px 14px;
+    background-color: white;
+    color: #0d6efd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    #menu-toogle:checked~nav {
-        display: block;
-    }
+.footer a:hover {
+    background-color: #dbeafe;
+}
 
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        margin-top: 10px;
-
+        gap: 12px;
     }
 
-    nav li {
+    .card {
         width: 100%;
+        max-width: 350px;
+        min-height: auto;
     }
 
-    nav a {
-        display: block;
-        padding: 12px;
+    .apresentacao,
+    .servicos,
+    .pagina-interna {
+        padding: 35px 15px;
     }
 }
